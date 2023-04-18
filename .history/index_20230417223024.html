@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bill Spill</title>
+</head>
+<body>
+  <h2 class="outside-most-heading">BILL <br>SPILL</h2>
+  <main>
+    
+    <div class="entire-container">
+      <div class="left-inside-container">
+          <label for="amount">Bill</label>
+          <input type="number" name="total" id="total-bill" placeholder="₹"  >
+          <div class="select-container">
+            <label for="tip">Select Tip % :</label>
+            <div class="button-containers">
+              <button id="five" class="bt-1 sizing">5%</button>
+              <button id="ten" class="bt-2 sizing">10%</button>
+              <button id="fifteen" class="bt-3 sizing">15%</button>
+              <button id="twentyfive" class="bt-4 sizing">25%</button>
+              <button id="fifty" class="bt-5 sizing">50%</button>
+              <button id="seventyfive" class="bt-6 sizing">75%</button>
+            </div>
+          </div>
+          <label for="people">Number of People : </label>
+          <div class="people-container">
+            <input type="number" name="people" id="people-number">
+            <button id="add-people" onclick="update_add()">+</button>
+            <h4 id="main-people" class="center-text">0</h4>
+            <button id="sub-people" onclick="update_sub()">-</button>
+          </div>
+      </div>
+
+
+      <div class="right-inside-container">
+        <div class="first-second-line">
+          <div class="first-line">
+            <div class="first-line-first">
+              <p class="one">Tip Amount</p>
+              <p class="two">/Person</p>
+  
+            </div>
+            <h1>₹0.00</h1>
+          </div>
+          <div class="second-line">
+            <div class="first-line-first">
+              <p class="one-two">Total</p>
+              <p class="two-two">/Person</p>
+  
+            </div>
+            <h1>₹0.00</h1>
+          </div>
+        </div>
+        
+        <input type="button" value="RESET">
+      </div>
+    </div>
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
